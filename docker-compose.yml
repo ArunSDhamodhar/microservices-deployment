@@ -2,9 +2,16 @@ version: '3.8'
 
 services:
   edhukkuda:
-    image:  arunsdhamodhar/demo-app:latest
+    image: arunsdhamodhar/demo-app:latest
     ports:
       - "8081:8080"
+    networks:
+      - app-network
+
+  edhukkudalab:  # New service for another repository
+    image: arunsdhamodhar/another-app:latest  # Replace with your actual image
+    ports:
+      - "8082:8080"  # Map host port 8082 to container port 8080
     networks:
       - app-network
 
