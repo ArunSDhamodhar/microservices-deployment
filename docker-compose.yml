@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   edhukkuda:
-    image: arunsdhamodhar/demoapp:latest
+    image:  arunsdhamodhar/demo-app:latest
     ports:
       - "8081:8080"
     networks:
