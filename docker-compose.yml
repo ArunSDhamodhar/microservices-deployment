@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   edhukkuda:
-    image: yourdockerhub/edhukkuda:latest
+    image: arunsdhamodhar/demoapp:latest
     ports:
       - "8081:8080"
     networks:
